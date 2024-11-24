@@ -66,8 +66,8 @@
             </div>
 
             <div class="flex" :class="form.id ? 'justify-between' : 'justify-end'" >
-                <button v-if="form.id" @click="deleteUserHandler" class="mt-4 bg-red-500 hover:bg-red-600 px-4 py-2 rounded-md" type="button">
-                    Eliminar
+                <button v-if="form.id" @click="deleteUserHandler" :class="form.is_enable ? 'bg-red-500 hover:bg-red-600' : 'bg-green-500 hover:bg-green-500'" class="mt-4 px-4 py-2 rounded-md" type="button">
+                    {{ form.is_enable ? 'Desactivar' : 'Activar' }}
                 </button>
                 <button class="mt-4 bg-secondary hover:bg-secondary/80 px-4 py-2 rounded-md" type="submit">
                     Guardar

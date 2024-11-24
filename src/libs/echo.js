@@ -3,10 +3,10 @@ import Pusher from 'pusher-js';
 
 const echo = new Echo({
     broadcaster: 'reverb',
-    key: 'n0yio342pjj34u5ua96t',
-    wsHost: "192.168.233.200",
-    wsPort: 8080,
-    forceTLS: false,
+    key: 'jbwlrcnx3u1hz1qglfyj',
+    wsHost: "api.smartunlocker.site",
+    wsPort: 8081,
+    forceTLS: true,
     encrypted: true,
     disableStats: true,
 });
